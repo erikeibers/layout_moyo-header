@@ -9,7 +9,6 @@ body {
   display: block;
   height: 40px;
   width: auto;
-
 }
 
 .header-container {
@@ -21,7 +20,6 @@ body {
 
 .nav-list {
   display: flex;
-  /* gap: 20px; */
 }
 
 .nav-list a:hover {
@@ -42,7 +40,6 @@ body {
   margin-right: 0;
 }
 
-
 .nav-link {
   text-decoration: none;
   color: #000;
@@ -57,7 +54,6 @@ body {
 }
 
 .is-active::after {
-
   content: '';
   position: absolute;
   display: block;
