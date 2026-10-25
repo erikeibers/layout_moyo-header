@@ -2,12 +2,21 @@ html,
 body {
   margin: 0;
   --color-navlist-hover: #00ACDC;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  display: block;
+  height: 40px;
+  width: auto;
+
 }
 
 .header-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 24px;
 }
 
 .nav-list {
@@ -21,12 +30,15 @@ body {
 
 .nav-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-list > li {
+.nav-list>li {
   margin-right: 20px;
 }
-.nav-list > li:last-child {
+
+.nav-list>li:last-child {
   margin-right: 0;
 }
 
@@ -40,7 +52,7 @@ body {
   text-transform: uppercase;
 }
 
-.is-active{
+.is-active {
   color: var(--color-navlist-hover);
 }
 
