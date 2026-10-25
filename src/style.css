@@ -1,3 +1,57 @@
+html,
 body {
   margin: 0;
+  --color-navlist-hover: #00ACDC;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  /* gap: 20px; */
+}
+
+.nav-list a:hover {
+  color: var(--color-navlist-hover);
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list > li {
+  margin-right: 20px;
+}
+.nav-list > li:last-child {
+  margin-right: 0;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.is-active{
+  color: var(--color-navlist-hover);
+}
+
+.is-active::after {
+
+  content: '';
+  position: absolute;
+  display: block;
+  height: 4px;
+  left: 0;
+  right: 0;
+  border-radius: 8px;
+  background-color: var(--color-navlist-hover);
 }
